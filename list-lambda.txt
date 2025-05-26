@@ -1,0 +1,1154 @@
+{
+    "Functions": [
+        {
+            "FunctionName": "teamgetOUs-main",
+            "FunctionArn": "arn:aws:lambda:us-east-1:284951504508:function:teamgetOUs-main",
+            "Runtime": "python3.9",
+            "Role": "arn:aws:iam::284951504508:role/teamLambdaRole1a0781fb-main",
+            "Handler": "index.handler",
+            "CodeSize": 903,
+            "Description": "",
+            "Timeout": 120,
+            "MemorySize": 128,
+            "LastModified": "2023-11-12T21:29:41.988+0000",
+            "CodeSha256": "w6MMywcStuKdnssfOx/CabT57fbYMklZ5sETcNAYuEY=",
+            "Version": "$LATEST",
+            "Environment": {
+                "Variables": {
+                    "ENV": "main",
+                    "REGION": "us-east-1"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "b4d72062-90c5-42f9-ac5d-45eb761334b3",
+            "Layers": [],
+            "PackageType": "Zip",
+            "Architectures": [
+                "x86_64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/teamgetOUs-main"
+            }
+        },
+        {
+            "FunctionName": "SpringClean-XUG3HH5R-AutoUpdateLambda-UM0ZHQRA1TR9",
+            "FunctionArn": "arn:aws:lambda:us-east-1:284951504508:function:SpringClean-XUG3HH5R-AutoUpdateLambda-UM0ZHQRA1TR9",
+            "Runtime": "python3.8",
+            "Role": "arn:aws:iam::284951504508:role/SpringClean-XUG3HH5R-AutoUpdateRole-9B312DZZ32HO",
+            "Handler": "lambda_function.lambda_handler",
+            "CodeSize": 21637941,
+            "Description": "",
+            "Timeout": 300,
+            "MemorySize": 256,
+            "LastModified": "2024-02-13T18:32:32.000+0000",
+            "CodeSha256": "91xOlG08DcvUR4TpuwrJa0XJTejusZJz26VW2AYFMNY=",
+            "Version": "$LATEST",
+            "VpcConfig": {
+                "SubnetIds": [],
+                "SecurityGroupIds": [],
+                "VpcId": "",
+                "Ipv6AllowedForDualStack": false
+            },
+            "Environment": {
+                "Variables": {
+                    "ACCOUNT_INFO_BUCKET": "devsupport-springclean-accountinfo-prod",
+                    "SPRINGCLEAN_FUNCTION_NAME": "SpringClean-XUG3HH5R-SpringCleanLambda-DTTYYHS8NHJT",
+                    "PVRE_ENABLED": "enabled",
+                    "AWS_PARTITION": "aws",
+                    "SPRINGCLEAN_UPDATE_ROLE": "arn:aws:iam::284951504508:role/SpringClean-XUG3HH5R-AutoUpdateElevatedRole-OJV5PFBXMZOJ",
+                    "STAGE": "stable",
+                    "AWS_ACCOUNT_ID": "284951504508",
+                    "SPRINGCLEAN_STACK_NAME": "SpringClean-XUG3HH5R",
+                    "CODE_BUCKET": "devsupport-springclean-prod",
+                    "CODE_PREFIX": ""
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "65fa1231-fb56-44f2-bc7c-b4238f08025b",
+            "PackageType": "Zip",
+            "Architectures": [
+                "x86_64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/SpringClean-XUG3HH5R-AutoUpdateLambda-UM0ZHQRA1TR9"
+            }
+        },
+        {
+            "FunctionName": "teamRouter-main",
+            "FunctionArn": "arn:aws:lambda:us-east-1:284951504508:function:teamRouter-main",
+            "Runtime": "python3.9",
+            "Role": "arn:aws:iam::284951504508:role/teamapplicationLambdaRole2258cd17-main",
+            "Handler": "index.handler",
+            "CodeSize": 19063655,
+            "Description": "",
+            "Timeout": 120,
+            "MemorySize": 128,
+            "LastModified": "2023-11-12T21:41:12.036+0000",
+            "CodeSha256": "NWo8r8mStwQUNU6051mb6lVRXi/mEe09przII4OzOpM=",
+            "Version": "$LATEST",
+            "Environment": {
+                "Variables": {
+                    "SETTINGS_TABLE_NAME": "Settings-wgi2f6t2jrdvho5kqfq3zooew4-main",
+                    "APPROVER_TABLE_NAME": "Approvers-wgi2f6t2jrdvho5kqfq3zooew4-main",
+                    "REJECT_SM": "arn:aws:states:us-east-1:284951504508:stateMachine:TEAM-Reject-SM-main",
+                    "REQUESTS_TABLE_NAME": "requests-wgi2f6t2jrdvho5kqfq3zooew4-main",
+                    "NOTIFICATION_TOPIC_ARN": "arn:aws:sns:us-east-1:284951504508:TeamNotifications-main",
+                    "API_TEAM_GRAPHQLAPIENDPOINTOUTPUT": "https://wz3windwlnfnrco6yojmc6ow6e.appsync-api.us-east-1.amazonaws.com/graphql",
+                    "ENV": "main",
+                    "GRANT_SM": "arn:aws:states:us-east-1:284951504508:stateMachine:TEAM-Grant-SM-main",
+                    "POLICY_TABLE_NAME": "Eligibility-wgi2f6t2jrdvho5kqfq3zooew4-main",
+                    "REGION": "us-east-1",
+                    "SCHEDULE_SM": "arn:aws:states:us-east-1:284951504508:stateMachine:TEAM-Schedule-SM-main",
+                    "SSO_LOGIN_URL": "https://vhicksso.awsapps.com/start",
+                    "API_TEAM_GRAPHQLAPIIDOUTPUT": "wgi2f6t2jrdvho5kqfq3zooew4",
+                    "FN_TEAMSTATUS_ARN": "arn:aws:lambda:us-east-1:284951504508:function:teamStatus-main",
+                    "REVOKE_SM": "arn:aws:states:us-east-1:284951504508:stateMachine:TEAM-Revoke-SM-main",
+                    "FN_TEAMNOTIFICATIONS_ARN": "arn:aws:lambda:us-east-1:284951504508:function:teamNotifications-main",
+                    "APPROVAL_SM": "arn:aws:states:us-east-1:284951504508:stateMachine:TEAM-Approval-SM-main",
+                    "AUTH_TEAM06DBB7FC_USERPOOLID": "us-east-1_OGJy5qaHU"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "9da47da4-bbae-49f1-870d-8df6d306babe",
+            "Layers": [],
+            "PackageType": "Zip",
+            "Architectures": [
+                "x86_64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/teamRouter-main"
+            }
+        },
+        {
+            "FunctionName": "teamNotifications-main",
+            "FunctionArn": "arn:aws:lambda:us-east-1:284951504508:function:teamNotifications-main",
+            "Runtime": "python3.10",
+            "Role": "arn:aws:iam::284951504508:role/teamLambdaRoledab1354c-main",
+            "Handler": "index.lambda_handler",
+            "CodeSize": 20230326,
+            "Description": "",
+            "Timeout": 120,
+            "MemorySize": 128,
+            "LastModified": "2023-11-12T21:37:03.696+0000",
+            "CodeSha256": "sZphkAbCc7ZGSo5+BGvJT6CaDUun/+5fnXWn6qJh6ko=",
+            "Version": "$LATEST",
+            "Environment": {
+                "Variables": {
+                    "SETTINGS_TABLE_NAME": "Settings-wgi2f6t2jrdvho5kqfq3zooew4-main",
+                    "ENV": "main",
+                    "REGION": "us-east-1"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "a0e494e8-70bb-40c3-89a9-caace537d459",
+            "Layers": [],
+            "PackageType": "Zip",
+            "Architectures": [
+                "x86_64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/teamNotifications-main"
+            }
+        },
+        {
+            "FunctionName": "teamgetMgmtAccountDetails-main",
+            "FunctionArn": "arn:aws:lambda:us-east-1:284951504508:function:teamgetMgmtAccountDetails-main",
+            "Runtime": "python3.8",
+            "Role": "arn:aws:iam::284951504508:role/teamidcappLambdaRole86d24cc3-main",
+            "Handler": "index.handler",
+            "CodeSize": 3367657,
+            "Description": "",
+            "Timeout": 25,
+            "MemorySize": 128,
+            "LastModified": "2023-11-12T21:29:41.127+0000",
+            "CodeSha256": "02rwShNSPMZgLVImvoezr2hQuX/EdNeMUmwJPOuxdfc=",
+            "Version": "$LATEST",
+            "Environment": {
+                "Variables": {
+                    "ENV": "main",
+                    "REGION": "us-east-1"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "8f8511d7-6c72-4054-aca5-1887e672d595",
+            "Layers": [],
+            "PackageType": "Zip",
+            "Architectures": [
+                "x86_64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/teamgetMgmtAccountDetails-main"
+            }
+        },
+        {
+            "FunctionName": "team-amplify-bucket-lambda-main",
+            "FunctionArn": "arn:aws:lambda:us-east-1:284951504508:function:team-amplify-bucket-lambda-main",
+            "Runtime": "python3.9",
+            "Role": "arn:aws:iam::284951504508:role/team-amplify-bucket-lambda-role-main",
+            "Handler": "index.handler",
+            "CodeSize": 1826,
+            "Description": "Put secure transport bucket policy and enable versioning on amplify bucket",
+            "Timeout": 30,
+            "MemorySize": 128,
+            "LastModified": "2023-11-12T21:29:42.859+0000",
+            "CodeSha256": "HgSoXEHFLKS59AAZ9fxmg1OrLn/QToZD7ieD4WSSK4Q=",
+            "Version": "$LATEST",
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "2d701a1a-2020-4ab2-b425-258f6dadc841",
+            "PackageType": "Zip",
+            "Architectures": [
+                "x86_64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/team-amplify-bucket-lambda-main"
+            }
+        },
+        {
+            "FunctionName": "teamgetIdCGroups-main",
+            "FunctionArn": "arn:aws:lambda:us-east-1:284951504508:function:teamgetIdCGroups-main",
+            "Runtime": "python3.9",
+            "Role": "arn:aws:iam::284951504508:role/teamapplicationLambdaRole95badf16-main",
+            "Handler": "index.handler",
+            "CodeSize": 814,
+            "Description": "",
+            "Timeout": 120,
+            "MemorySize": 128,
+            "LastModified": "2023-11-12T21:29:41.348+0000",
+            "CodeSha256": "0Qjcbb1BI1wMFVcLwT4IqGxkIQp177ZgWkFT7NmExm0=",
+            "Version": "$LATEST",
+            "Environment": {
+                "Variables": {
+                    "ENV": "main",
+                    "REGION": "us-east-1"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "3ff89f3b-41d9-43e2-a678-b87b24fca4c3",
+            "Layers": [],
+            "PackageType": "Zip",
+            "Architectures": [
+                "x86_64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/teamgetIdCGroups-main"
+            }
+        },
+        {
+            "FunctionName": "teamqueryLogs-main",
+            "FunctionArn": "arn:aws:lambda:us-east-1:284951504508:function:teamqueryLogs-main",
+            "Runtime": "nodejs18.x",
+            "Role": "arn:aws:iam::284951504508:role/teampamapplicationLambdaRole964e0b09-main",
+            "Handler": "index.handler",
+            "CodeSize": 2295879,
+            "Description": "",
+            "Timeout": 250,
+            "MemorySize": 128,
+            "LastModified": "2023-11-12T21:30:07.444+0000",
+            "CodeSha256": "YVr3r51Y3bdi5JLuMuh7q5riP+GOf63DAKR46JM5Na0=",
+            "Version": "$LATEST",
+            "Environment": {
+                "Variables": {
+                    "EVENT_DATA_STORE": "arn:aws:cloudtrail:us-east-1:284951504508:eventdatastore/ed75b443-bd45-4deb-b288-4da580ed28d5",
+                    "ENV": "main",
+                    "REGION": "us-east-1"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "8c35dbcf-d729-4530-adc5-ed9d521f9b55",
+            "Layers": [],
+            "PackageType": "Zip",
+            "Architectures": [
+                "x86_64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/teamqueryLogs-main"
+            }
+        },
+        {
+            "FunctionName": "amplify-teamidcapp-main-212726-OAuthCustomResource-pxfSqq4LhQDf",
+            "FunctionArn": "arn:aws:lambda:us-east-1:284951504508:function:amplify-teamidcapp-main-212726-OAuthCustomResource-pxfSqq4LhQDf",
+            "Runtime": "nodejs14.x",
+            "Role": "arn:aws:iam::284951504508:role/upClientLambdaRole06dbb7fc212726-main",
+            "Handler": "index.handler",
+            "CodeSize": 2708,
+            "Description": "",
+            "Timeout": 300,
+            "MemorySize": 128,
+            "LastModified": "2023-11-12T21:30:56.676+0000",
+            "CodeSha256": "GBDkuQAGfpdXHwu6w/+rf0mUrU729VBdkJRmW6rbDc8=",
+            "Version": "$LATEST",
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "8c9ba47d-4506-4ff1-9578-1c7f552f94f1",
+            "PackageType": "Zip",
+            "Architectures": [
+                "x86_64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/amplify-teamidcapp-main-212726-OAuthCustomResource-pxfSqq4LhQDf"
+            }
+        },
+        {
+            "FunctionName": "teamgetOU-main",
+            "FunctionArn": "arn:aws:lambda:us-east-1:284951504508:function:teamgetOU-main",
+            "Runtime": "python3.9",
+            "Role": "arn:aws:iam::284951504508:role/teamLambdaRole0d01eb1d-main",
+            "Handler": "index.handler",
+            "CodeSize": 697,
+            "Description": "",
+            "Timeout": 120,
+            "MemorySize": 128,
+            "LastModified": "2023-11-12T21:29:41.408+0000",
+            "CodeSha256": "RhCbQAZP8H2muyxn568vDIpvwExEO6CyXX+snXFOFkw=",
+            "Version": "$LATEST",
+            "Environment": {
+                "Variables": {
+                    "ENV": "main",
+                    "REGION": "us-east-1"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "660d97f0-a1fa-4f8c-92ef-2456fc3d6823",
+            "Layers": [],
+            "PackageType": "Zip",
+            "Architectures": [
+                "x86_64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/teamgetOU-main"
+            }
+        },
+        {
+            "FunctionName": "amplify-teamidcapp-main-21272-UserPoolClientLambda-YPgiCPzFfAMq",
+            "FunctionArn": "arn:aws:lambda:us-east-1:284951504508:function:amplify-teamidcapp-main-21272-UserPoolClientLambda-YPgiCPzFfAMq",
+            "Runtime": "nodejs14.x",
+            "Role": "arn:aws:iam::284951504508:role/upClientLambdaRole06dbb7fc212726-main",
+            "Handler": "index.handler",
+            "CodeSize": 2457,
+            "Description": "",
+            "Timeout": 300,
+            "MemorySize": 128,
+            "LastModified": "2023-11-12T21:29:57.581+0000",
+            "CodeSha256": "VN+IbbkQiHoHjhChLb/ORayr9+liC4f1mJezIqD4jC8=",
+            "Version": "$LATEST",
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "0f377a53-9bfd-43a9-8378-4d13066e5f07",
+            "PackageType": "Zip",
+            "Architectures": [
+                "x86_64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/amplify-teamidcapp-main-21272-UserPoolClientLambda-YPgiCPzFfAMq"
+            }
+        },
+        {
+            "FunctionName": "amplify-teamidcapp-main-2-HostedUIProvidersCustomR-M1Sd0MMEwjz4",
+            "FunctionArn": "arn:aws:lambda:us-east-1:284951504508:function:amplify-teamidcapp-main-2-HostedUIProvidersCustomR-M1Sd0MMEwjz4",
+            "Runtime": "nodejs14.x",
+            "Role": "arn:aws:iam::284951504508:role/upClientLambdaRole06dbb7fc212726-main",
+            "Handler": "index.handler",
+            "CodeSize": 3102,
+            "Description": "",
+            "Timeout": 300,
+            "MemorySize": 128,
+            "LastModified": "2023-11-12T21:29:57.432+0000",
+            "CodeSha256": "2fCozge35VPdQAeUYdAdqsCznRLxYul0VrEW+nfbFKM=",
+            "Version": "$LATEST",
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "3affca59-d8e0-4bf3-b135-ec9e3f0fe5e9",
+            "PackageType": "Zip",
+            "Architectures": [
+                "x86_64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/amplify-teamidcapp-main-2-HostedUIProvidersCustomR-M1Sd0MMEwjz4"
+            }
+        },
+        {
+            "FunctionName": "teamgetPermissions-main",
+            "FunctionArn": "arn:aws:lambda:us-east-1:284951504508:function:teamgetPermissions-main",
+            "Runtime": "python3.9",
+            "Role": "arn:aws:iam::284951504508:role/teamLambdaRole24f53f7b-main",
+            "Handler": "index.handler",
+            "CodeSize": 1140,
+            "Description": "",
+            "Timeout": 120,
+            "MemorySize": 128,
+            "LastModified": "2023-11-12T21:29:41.412+0000",
+            "CodeSha256": "+4hxm9YRQcGfNUEZMymDVqKdvupqHadQR395EDO34eg=",
+            "Version": "$LATEST",
+            "Environment": {
+                "Variables": {
+                    "ACCOUNT_ID": "284951504508",
+                    "ENV": "main",
+                    "REGION": "us-east-1"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "a36c0d89-359e-4812-934d-044476138c99",
+            "Layers": [],
+            "PackageType": "Zip",
+            "Architectures": [
+                "x86_64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/teamgetPermissions-main"
+            }
+        },
+        {
+            "FunctionName": "teamgetLogs-main",
+            "FunctionArn": "arn:aws:lambda:us-east-1:284951504508:function:teamgetLogs-main",
+            "Runtime": "nodejs18.x",
+            "Role": "arn:aws:iam::284951504508:role/teamapplicationLambdaRole5fbe17a6-main",
+            "Handler": "index.handler",
+            "CodeSize": 4389908,
+            "Description": "",
+            "Timeout": 250,
+            "MemorySize": 128,
+            "LastModified": "2023-11-12T21:37:01.372+0000",
+            "CodeSha256": "GYW02ZzROoN/mUe3ZKti/gS3+npq9w0HL7vI6O16g/E=",
+            "Version": "$LATEST",
+            "Environment": {
+                "Variables": {
+                    "EVENT_DATA_STORE": "arn:aws:cloudtrail:us-east-1:284951504508:eventdatastore/ed75b443-bd45-4deb-b288-4da580ed28d5",
+                    "API_AWSPIM_GRAPHQLAPIIDOUTPUT": "wgi2f6t2jrdvho5kqfq3zooew4",
+                    "API_TEAM_GRAPHQLAPIENDPOINTOUTPUT": "https://wz3windwlnfnrco6yojmc6ow6e.appsync-api.us-east-1.amazonaws.com/graphql",
+                    "ENV": "main",
+                    "REGION": "us-east-1",
+                    "SESSIONS_TABLE_NAME": "sessions-wgi2f6t2jrdvho5kqfq3zooew4-main"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "b8024e82-ca3a-4688-a40d-3027dc34a7e4",
+            "Layers": [],
+            "PackageType": "Zip",
+            "Architectures": [
+                "x86_64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/teamgetLogs-main"
+            }
+        },
+        {
+            "FunctionName": "teamgetAccounts-main",
+            "FunctionArn": "arn:aws:lambda:us-east-1:284951504508:function:teamgetAccounts-main",
+            "Runtime": "python3.9",
+            "Role": "arn:aws:iam::284951504508:role/teamLambdaRoleb3b3af79-main",
+            "Handler": "index.handler",
+            "CodeSize": 916,
+            "Description": "",
+            "Timeout": 120,
+            "MemorySize": 128,
+            "LastModified": "2023-11-12T21:29:41.209+0000",
+            "CodeSha256": "+vesRLBXirIkzQcJLw/tsTylJqoG4CW+9uNogD2jUP0=",
+            "Version": "$LATEST",
+            "Environment": {
+                "Variables": {
+                    "ACCOUNT_ID": "284951504508",
+                    "ENV": "main",
+                    "REGION": "us-east-1"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "37eab4d5-0fe2-4747-aed6-07f92dcc0632",
+            "Layers": [],
+            "PackageType": "Zip",
+            "Architectures": [
+                "x86_64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/teamgetAccounts-main"
+            }
+        },
+        {
+            "FunctionName": "stackforiamalert-LambdaFunction",
+            "FunctionArn": "arn:aws:lambda:us-east-1:284951504508:function:stackforiamalert-LambdaFunction",
+            "Runtime": "python3.9",
+            "Role": "arn:aws:iam::284951504508:role/stackforiamalert-LambdaRole",
+            "Handler": "index.lambda_handler",
+            "CodeSize": 3152,
+            "Description": "",
+            "Timeout": 60,
+            "MemorySize": 128,
+            "LastModified": "2023-07-28T12:17:16.000+0000",
+            "CodeSha256": "bzBeAT1IKZz0sjYDmlTofqVaojphqzKEdAboYF4zlqk=",
+            "Version": "$LATEST",
+            "Environment": {
+                "Variables": {
+                    "outbound_topic_arn": "arn:aws:sns:us-east-1:284951504508:stackforiamalert-rNotifyTopicSNS-aFUubdbtrXTw",
+                    "logging_level": "ERROR"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "54285ccb-e7e7-4868-b1d6-15f11e74ca4a",
+            "PackageType": "Zip",
+            "Architectures": [
+                "x86_64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/stackforiamalert-LambdaFunction"
+            }
+        },
+        {
+            "FunctionName": "amplify-teamidcapp-main-2-UpdateRolesWithIDPFuncti-6mlMaBuIDHSg",
+            "FunctionArn": "arn:aws:lambda:us-east-1:284951504508:function:amplify-teamidcapp-main-2-UpdateRolesWithIDPFuncti-6mlMaBuIDHSg",
+            "Runtime": "nodejs14.x",
+            "Role": "arn:aws:iam::284951504508:role/amplify-teamidcapp-main-212726-authRole-idp",
+            "Handler": "index.handler",
+            "CodeSize": 2952,
+            "Description": "",
+            "Timeout": 300,
+            "MemorySize": 128,
+            "LastModified": "2023-11-12T21:31:58.730+0000",
+            "CodeSha256": "OleDEeTpwEvGwEGETTXi1JD6jvioxDp3/L3cONOFsu0=",
+            "Version": "$LATEST",
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "5e11a466-ef15-46f7-b803-b534b9150c93",
+            "PackageType": "Zip",
+            "Architectures": [
+                "x86_64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/amplify-teamidcapp-main-2-UpdateRolesWithIDPFuncti-6mlMaBuIDHSg"
+            }
+        },
+        {
+            "FunctionName": "teamgetGroups-main",
+            "FunctionArn": "arn:aws:lambda:us-east-1:284951504508:function:teamgetGroups-main",
+            "Runtime": "python3.9",
+            "Role": "arn:aws:iam::284951504508:role/teamapplicationLambdaRoledc40f306-main",
+            "Handler": "index.handler",
+            "CodeSize": 3368415,
+            "Description": "",
+            "Timeout": 120,
+            "MemorySize": 128,
+            "LastModified": "2023-11-12T21:37:02.469+0000",
+            "CodeSha256": "YAQmGSRKroE1SKoqbVjHUx9ea//ea8hZSm5BAZQu7Is=",
+            "Version": "$LATEST",
+            "Environment": {
+                "Variables": {
+                    "SETTINGS_TABLE_NAME": "Settings-wgi2f6t2jrdvho5kqfq3zooew4-main",
+                    "API_AWSPIM_GRAPHQLAPIIDOUTPUT": "wgi2f6t2jrdvho5kqfq3zooew4",
+                    "AUTH_AWSPIM06DBB7FC_USERPOOLID": "us-east-1_OGJy5qaHU",
+                    "TEAM_AUDITOR_GROUP": "team_auditor_group_name",
+                    "TEAM_ADMIN_GROUP": "team_admin_group_name",
+                    "API_TEAM_GRAPHQLAPIENDPOINTOUTPUT": "https://wz3windwlnfnrco6yojmc6ow6e.appsync-api.us-east-1.amazonaws.com/graphql",
+                    "ENV": "main",
+                    "REGION": "us-east-1"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "7e71227f-98c3-41d9-9eb1-bb145dbd9c08",
+            "Layers": [
+                {
+                    "Arn": "arn:aws:lambda:us-east-1:284951504508:layer:teamapplicationboto3layer-main:1",
+                    "CodeSize": 18589462
+                }
+            ],
+            "PackageType": "Zip",
+            "Architectures": [
+                "x86_64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/teamgetGroups-main"
+            }
+        },
+        {
+            "FunctionName": "SpringClean-XUG3HH5R-SpringCleanLambda-DTTYYHS8NHJT",
+            "FunctionArn": "arn:aws:lambda:us-east-1:284951504508:function:SpringClean-XUG3HH5R-SpringCleanLambda-DTTYYHS8NHJT",
+            "Runtime": "python3.8",
+            "Role": "arn:aws:iam::284951504508:role/SpringClean-XUG3HH5R-SpringCleanRole-VXTTFQBJH5RD",
+            "Handler": "lambda_function.lambda_handler",
+            "CodeSize": 21639519,
+            "Description": "Main SpringClean function. Performs start/stop/delete/compliance checks",
+            "Timeout": 300,
+            "MemorySize": 3008,
+            "LastModified": "2024-02-13T18:32:16.000+0000",
+            "CodeSha256": "Z2oty4mPvwPoTNJXKgXDaTRQaYrRIwGSIrAagazCA+Y=",
+            "Version": "$LATEST",
+            "VpcConfig": {
+                "SubnetIds": [],
+                "SecurityGroupIds": [],
+                "VpcId": "",
+                "Ipv6AllowedForDualStack": false
+            },
+            "Environment": {
+                "Variables": {
+                    "ACCOUNT_INFO_BUCKET": "devsupport-springclean-accountinfo-prod",
+                    "DELETE_AGE": "7",
+                    "PVRE_ENABLED": "enabled",
+                    "SERVICE_ENDPOINT": "https://api.beta.us-east-1.springclean.support.aws.a2z.com",
+                    "DDB_TABLE": "SpringClean-XUG3HH5R-SpringCleanDDBTable-1HQVG6JFQT3E9",
+                    "GRACE_PERIOD": "10",
+                    "LOGLEVEL_BOTO": "ERROR",
+                    "STAGE": "stable",
+                    "WARN_AGE": "4",
+                    "EMAIL": "okonyv@amazon.com",
+                    "WHITELIST_PREFIX": "individual",
+                    "STACK_NAME": "SpringClean-XUG3HH5R",
+                    "AWS_PARTITION": "aws",
+                    "CONTROL_KEY": "ac.txt",
+                    "VERSION": "1.0.201329.0",
+                    "AWS_ACCOUNT_ID": "284951504508",
+                    "MAX_DELETABLE_RES": "200",
+                    "CODE_BUCKET": "devsupport-springclean-prod",
+                    "LOGLEVEL": "INFO"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "302ca3ce-fcab-452a-af3e-49283d5fe0ef",
+            "PackageType": "Zip",
+            "Architectures": [
+                "x86_64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/SpringClean-XUG3HH5R-SpringCleanLambda-DTTYYHS8NHJT"
+            }
+        },
+        {
+            "FunctionName": "amplify-teamidcapp-main-212-HostedUICustomResource-uoARJZVn723g",
+            "FunctionArn": "arn:aws:lambda:us-east-1:284951504508:function:amplify-teamidcapp-main-212-HostedUICustomResource-uoARJZVn723g",
+            "Runtime": "nodejs14.x",
+            "Role": "arn:aws:iam::284951504508:role/upClientLambdaRole06dbb7fc212726-main",
+            "Handler": "index.handler",
+            "CodeSize": 2775,
+            "Description": "",
+            "Timeout": 300,
+            "MemorySize": 128,
+            "LastModified": "2023-11-12T21:29:57.599+0000",
+            "CodeSha256": "cqQKhAgGdrVs0fZVF+phj1c07hYxN6tHdIOB1Nd5boY=",
+            "Version": "$LATEST",
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "3170faf8-0c50-47e4-9be1-84c1d0521517",
+            "PackageType": "Zip",
+            "Architectures": [
+                "x86_64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/amplify-teamidcapp-main-212-HostedUICustomResource-uoARJZVn723g"
+            }
+        },
+        {
+            "FunctionName": "teamStatus-main",
+            "FunctionArn": "arn:aws:lambda:us-east-1:284951504508:function:teamStatus-main",
+            "Runtime": "nodejs18.x",
+            "Role": "arn:aws:iam::284951504508:role/teamidcappLambdaRoleac7fba6e-main",
+            "Handler": "index.handler",
+            "CodeSize": 3541577,
+            "Description": "",
+            "Timeout": 25,
+            "MemorySize": 128,
+            "LastModified": "2023-11-12T21:37:07.324+0000",
+            "CodeSha256": "/6Htzc1NA4RWTrLcfMZKQQLpPvpNA4CpeTlL63Ejft4=",
+            "Version": "$LATEST",
+            "Environment": {
+                "Variables": {
+                    "API_TEAM_GRAPHQLAPIIDOUTPUT": "wgi2f6t2jrdvho5kqfq3zooew4",
+                    "API_TEAM_GRAPHQLAPIENDPOINTOUTPUT": "https://wz3windwlnfnrco6yojmc6ow6e.appsync-api.us-east-1.amazonaws.com/graphql",
+                    "ENV": "main",
+                    "REGION": "us-east-1"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "fc6ab263-d1c2-49db-81c2-faf83fcff5d9",
+            "Layers": [],
+            "PackageType": "Zip",
+            "Architectures": [
+                "x86_64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/teamStatus-main"
+            }
+        },
+        {
+            "FunctionName": "SpringClean-XUG3HH5R-FeatureCheckerFunction-IdbQOMNqD9DX",
+            "FunctionArn": "arn:aws:lambda:us-east-1:284951504508:function:SpringClean-XUG3HH5R-FeatureCheckerFunction-IdbQOMNqD9DX",
+            "Runtime": "python3.8",
+            "Role": "arn:aws:iam::284951504508:role/SpringClean-XUG3HH5R-FeatureCheckerFunctionRole-1DN6RFFWOIESW",
+            "Handler": "index.lambda_handler",
+            "CodeSize": 2503,
+            "Description": "SpringClean module eligibility checker function",
+            "Timeout": 30,
+            "MemorySize": 128,
+            "LastModified": "2024-02-13T18:32:36.000+0000",
+            "CodeSha256": "3BtW+Tde1k1gpzeOxE42isxBbXeWTIEFk8FgBEaYY5E=",
+            "Version": "$LATEST",
+            "VpcConfig": {
+                "SubnetIds": [],
+                "SecurityGroupIds": [],
+                "VpcId": "",
+                "Ipv6AllowedForDualStack": false
+            },
+            "Environment": {
+                "Variables": {
+                    "ACCOUNT_INFO_BUCKET": "devsupport-springclean-accountinfo-prod",
+                    "VERSION": "1.0.201329.0"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "b859f84d-6a3a-46d1-bc45-139e4060b182",
+            "PackageType": "Zip",
+            "Architectures": [
+                "x86_64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/SpringClean-XUG3HH5R-FeatureCheckerFunction-IdbQOMNqD9DX"
+            }
+        },
+        {
+            "FunctionName": "teamgetUserEntitlement-main",
+            "FunctionArn": "arn:aws:lambda:us-east-1:284951504508:function:teamgetUserEntitlement-main",
+            "Runtime": "python3.9",
+            "Role": "arn:aws:iam::284951504508:role/teamapplicationLambdaRole9bc77f30-main",
+            "Handler": "index.handler",
+            "CodeSize": 2544,
+            "Description": "",
+            "Timeout": 120,
+            "MemorySize": 128,
+            "LastModified": "2023-11-12T21:37:02.144+0000",
+            "CodeSha256": "ZNdd4vccdHWDw4412YixbMIsdiHtRN/0XX9iKIc5Yos=",
+            "Version": "$LATEST",
+            "Environment": {
+                "Variables": {
+                    "ACCOUNT_ID": "284951504508",
+                    "API_AWSPIM_GRAPHQLAPIIDOUTPUT": "wgi2f6t2jrdvho5kqfq3zooew4",
+                    "API_TEAM_GRAPHQLAPIENDPOINTOUTPUT": "https://wz3windwlnfnrco6yojmc6ow6e.appsync-api.us-east-1.amazonaws.com/graphql",
+                    "ENV": "main",
+                    "POLICY_TABLE_NAME": "Eligibility-wgi2f6t2jrdvho5kqfq3zooew4-main",
+                    "REGION": "us-east-1"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "91a00301-7329-458d-9185-3e6a4b93efa3",
+            "Layers": [],
+            "PackageType": "Zip",
+            "Architectures": [
+                "x86_64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/teamgetUserEntitlement-main"
+            }
+        },
+        {
+            "FunctionName": "TEAM-IDC-APP-TriggerBuildLambda-ZfqP8g0u0ecp",
+            "FunctionArn": "arn:aws:lambda:us-east-1:284951504508:function:TEAM-IDC-APP-TriggerBuildLambda-ZfqP8g0u0ecp",
+            "Runtime": "python3.9",
+            "Role": "arn:aws:iam::284951504508:role/TEAM-IDC-APP-AmplifyLambdaRole-KKCYEDrqbS34",
+            "Handler": "index.handler",
+            "CodeSize": 1465,
+            "Description": "",
+            "Timeout": 120,
+            "MemorySize": 128,
+            "LastModified": "2023-11-12T21:24:27.680+0000",
+            "CodeSha256": "8ho7PpXAViVgsACRUsLzZtm0Inh3Q15Fo9IiAOxWRRE=",
+            "Version": "$LATEST",
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "6ead6e7a-4af9-4e97-b2a8-1a6687dcc135",
+            "PackageType": "Zip",
+            "Architectures": [
+                "x86_64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/TEAM-IDC-APP-TriggerBuildLambda-ZfqP8g0u0ecp"
+            }
+        },
+        {
+            "FunctionName": "teamgetUsers-main",
+            "FunctionArn": "arn:aws:lambda:us-east-1:284951504508:function:teamgetUsers-main",
+            "Runtime": "python3.9",
+            "Role": "arn:aws:iam::284951504508:role/teamapplicationLambdaRole68344eb0-main",
+            "Handler": "index.handler",
+            "CodeSize": 814,
+            "Description": "",
+            "Timeout": 120,
+            "MemorySize": 128,
+            "LastModified": "2023-11-12T21:37:00.964+0000",
+            "CodeSha256": "sFmsLsNwsea/B2VUXu67h/MScbJFLHh5lK19Lq6Mqjw=",
+            "Version": "$LATEST",
+            "Environment": {
+                "Variables": {
+                    "API_AWSPIM_GRAPHQLAPIIDOUTPUT": "wgi2f6t2jrdvho5kqfq3zooew4",
+                    "API_TEAM_GRAPHQLAPIENDPOINTOUTPUT": "https://wz3windwlnfnrco6yojmc6ow6e.appsync-api.us-east-1.amazonaws.com/graphql",
+                    "ENV": "main",
+                    "REGION": "us-east-1"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "8f475e72-b6de-49f1-b6c5-f01936ce011b",
+            "Layers": [],
+            "PackageType": "Zip",
+            "Architectures": [
+                "x86_64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/teamgetUsers-main"
+            }
+        },
+        {
+            "FunctionName": "teamListGroups-main",
+            "FunctionArn": "arn:aws:lambda:us-east-1:284951504508:function:teamListGroups-main",
+            "Runtime": "python3.9",
+            "Role": "arn:aws:iam::284951504508:role/teamapplicationLambdaRolec9987b5d-main",
+            "Handler": "index.handler",
+            "CodeSize": 3367576,
+            "Description": "",
+            "Timeout": 120,
+            "MemorySize": 128,
+            "LastModified": "2023-11-12T21:30:07.073+0000",
+            "CodeSha256": "2T416rSS1XOHhd00Uk6trFZpats9wAeNry0wok+3OR4=",
+            "Version": "$LATEST",
+            "Environment": {
+                "Variables": {
+                    "ENV": "main",
+                    "REGION": "us-east-1"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "3717fec3-f791-40a4-8654-8e467f5f913c",
+            "Layers": [
+                {
+                    "Arn": "arn:aws:lambda:us-east-1:284951504508:layer:teamapplicationboto3layer-main:1",
+                    "CodeSize": 18589462
+                }
+            ],
+            "PackageType": "Zip",
+            "Architectures": [
+                "x86_64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/teamListGroups-main"
+            }
+        },
+        {
+            "FunctionName": "amplify-teamidcapp-main-212726-aut-RoleMapFunction-sozva0lXQcFO",
+            "FunctionArn": "arn:aws:lambda:us-east-1:284951504508:function:amplify-teamidcapp-main-212726-aut-RoleMapFunction-sozva0lXQcFO",
+            "Runtime": "nodejs14.x",
+            "Role": "arn:aws:iam::284951504508:role/team06dbb7fc-ExecutionRole-main",
+            "Handler": "index.handler",
+            "CodeSize": 2642,
+            "Description": "",
+            "Timeout": 300,
+            "MemorySize": 128,
+            "LastModified": "2023-11-12T21:32:22.121+0000",
+            "CodeSha256": "cWnNeV6IVrqmhC8CfUA1bcXC+4pufeYyVVgiVoIbmys=",
+            "Version": "$LATEST",
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "4dc14a3c-60e6-4557-a473-fafdad53bd70",
+            "PackageType": "Zip",
+            "Architectures": [
+                "x86_64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/amplify-teamidcapp-main-212726-aut-RoleMapFunction-sozva0lXQcFO"
+            }
+        },
+        {
+            "FunctionName": "SpringClean-XUG3HH5R-SesVerifyEmailFunction-PXWCL9Y2V21A",
+            "FunctionArn": "arn:aws:lambda:us-east-1:284951504508:function:SpringClean-XUG3HH5R-SesVerifyEmailFunction-PXWCL9Y2V21A",
+            "Runtime": "python3.8",
+            "Role": "arn:aws:iam::284951504508:role/SpringClean-XUG3HH5R-SesVerifyEmailFunctionRole-3D40G3C0KUE5",
+            "Handler": "index.lambda_handler",
+            "CodeSize": 1478,
+            "Description": "Used to update SES verified email addresses.",
+            "Timeout": 30,
+            "MemorySize": 128,
+            "LastModified": "2023-05-02T17:32:14.000+0000",
+            "CodeSha256": "kwVBt0jLTRUD/bz3k7xfxSNJB3dYQ9rAFTfiusm9rq8=",
+            "Version": "$LATEST",
+            "VpcConfig": {
+                "SubnetIds": [],
+                "SecurityGroupIds": [],
+                "VpcId": "",
+                "Ipv6AllowedForDualStack": false
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "2c970de1-d809-45fa-9b8b-91895efc6593",
+            "PackageType": "Zip",
+            "Architectures": [
+                "x86_64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/SpringClean-XUG3HH5R-SesVerifyEmailFunction-PXWCL9Y2V21A"
+            }
+        }
+    ]
+}
